@@ -4,7 +4,7 @@ Una aplicación web desarrollada con Flask para una clínica de psicología que 
 
 ## 🌐 Ver la Aplicación en Vivo
 
-**[🔗 Visitar la Clínica de Psicología Web](https://ingvaldiviezo.github.io/FirstCode/)**
+**[🔗 Visitar la Clínica de Psicología Web](https://ingvaldiviezo.github.io/WebPage/)**
 
 ## Características
 
