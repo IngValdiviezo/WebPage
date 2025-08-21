@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Sobre Nosotros{% endblock %}
+{% block content %}
+    <h2>Sobre la Clínica</h2>
+    <p>Somos un equipo de psicólogos certificados dedicados a ayudarte.</p>
+    <div class="about-img-container">
+        <img src="{{ url_for('static', filename='tu_imagen.jpg') }}" alt="Sobre Nosotros" class="image">
+        <div class="middle">
+            <div class="text">Conoce a nuestro equipo</div>
+        </div>
+    </div>
+    <h3 class="text-center">Ubicación</h3>
+    <div style="width:100%;max-width:600px;margin:30px auto;">
+        <iframe
+           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d680.6464453134419!2d-92.98982320087698!3d17.97331382996597!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85edd6f7209a6f45%3A0x94fca0918fe39b2f!2sPriv.%20San%20Javier%2C%20Miguel%20Hidalgo%20III%20Etapa%2C%2086126%20Villahermosa%2C%20Tab.!5e0!3m2!1sen!2smx!4v1754858762363!5m2!1sen!2smx" 
+           width="600" 
+           height="450" 
+           style="border:0;" 
+           allowfullscreen="" 
+           loading="lazy" 
+           referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+{% endblock %}

@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block title %}Inicio - Clínica de Psicología{% endblock %}
+{% block content %}
+<div class="container-fluid">
+    <!-- Hero Section -->
+    <div class="row justify-content-center my-4">
+        <div class="col-lg-10">
+            <div class="hero">
+                <h1>We solve problems that are beyond your control</h1>
+                <p>Patient access in a 24-hour online service whenever you need it, day or night.</p>
+                <a href="{{ url_for('services') }}" class="btn-appointment">Ver Servicios</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Cards Section -->
+    <div class="cards-section">
+        <div class="card">
+            <h2>Terapia Individual</h2>
+            <p>Atención personalizada para tu bienestar emocional.</p>
+        </div>
+        <div class="card">
+            <h2>Terapia en línea</h2>
+            <p>Sesiones virtuales para tu comodidad y seguridad.</p>
+        </div>
+        <div class="card">
+            <h2>Terapia de pareja</h2>
+            <p>Apoyo profesional para fortalecer la relación de pareja.</p>
+        </div>
+        <div class="card">
+            <h2>Terapia familiar</h2>
+            <p>Intervención para mejorar la dinámica y comunicación familiar.</p>
+        </div>
+        <div class="card">
+            <h2>Terapia de duelo</h2>
+            <p>Acompañamiento emocional en procesos de pérdida.</p>
+        </div>
+        <div class="card">
+            <h2>Taller de duelo</h2>
+            <p>Espacios grupales para compartir y sanar el duelo.</p>
+        </div>
+    </div>
+    
+    <!-- Gallery Section -->
+    <div class="gallery-box">
+        <div class="gallery-container mx-auto">
+            <img class="gallery-image active" src="{{ url_for('sources', filename='promo1.png') }}">
+            <img class="gallery-image" src="{{ url_for('sources', filename='promo2.png') }}">
+            <img class="gallery-image" src="{{ url_for('sources', filename='promo3.png') }}">
+            <img class="gallery-image" src="{{ url_for('sources', filename='promo4.png') }}">
+            <img class="gallery-image" src="{{ url_for('sources', filename='promo5.png') }}">
+            <img class="gallery-image" src="{{ url_for('sources', filename='promo6.png') }}">
+            <img class="gallery-image" src="{{ url_for('sources', filename='promo7.png') }}">
+        </div>
+    </div>
+</div>
+{% endblock %}

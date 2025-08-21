@@ -1,0 +1,172 @@
+body {
+    background: #bee2f0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Header personalizado */
+.top-bar {
+    background: #ffffff;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #84e789;
+}
+
+.logo {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #0984e3;
+    letter-spacing: 1px;
+}
+
+.btn-appointment {
+    background: #a29bfe;
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.btn-appointment:hover {
+    background: #6c5ce7;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Nav personalizado */
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 24px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+/* Hero personalizado */
+.hero {
+    background: linear-gradient(90deg, #0984e3 60%, #6c5ce7 100%);
+    color: #fff;
+    border-radius: 16px;
+    text-align: center;
+    padding: 60px 40px;
+}
+
+/* Galería personalizada */
+.gallery-container {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #00000000;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: 1;
+}
+
+.gallery-image.active {
+    opacity: 1;
+    z-index: 2;
+}
+
+.gallery-box {
+    max-width: 1200px;
+    width: 90%;
+    margin: 100px auto 40px auto;
+    padding: 40px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    background: #fff;
+}
+
+/* Mejorar las tarjetas existentes */
+.cards-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    border: none; /* Quita border de Bootstrap si hay conflicto */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+.card h2 {
+    color: #0984e3;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.card .price {
+    color: #a29bfe;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    font-size: 0.95em;
+}
+
+.card strong {
+    color: #0984e3;
+}
+
+/* Botón grande para agendar */
+.btn-large {
+    padding: 12px 30px;
+    font-size: 1.1em;
+    margin-top: 20px;
+}

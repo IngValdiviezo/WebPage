@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block title %}Servicios - Clínica de Psicología{% endblock %}
+{% block content %}
+    <h1>Nuestros Servicios</h1>
+    <div class="cards-section">
+        <div class="card">
+            <h2>Terapia Individual</h2>
+            <p class="price">$700 x sesión</p>
+            <p>¿Sientes que tu bienestar emocional está pidiendo ayuda?<br>
+            En nuestras sesiones de terapia individual, creamos un espacio seguro y confidencial donde puedes explorar tus emociones y pensamientos. Con el apoyo adecuado, podrás superar obstáculos y alcanzar un mayor equilibrio emocional.<br>
+            <strong>¡Agenda tu sesión hoy y da el primer paso hacia una mejor versión de ti mismo!</strong></p>
+        </div>
+        <div class="card">
+            <h2>Terapia en línea</h2>
+            <p class="price">$700 x sesión</p>
+            <p>¿Necesitas apoyo emocional, pero no puedes trasladarte a una consulta?<br>
+            La terapia en línea te brinda la misma atención profesional desde la comodidad de tu hogar, adaptándose a tu tiempo y espacio. Imagina recibir orientación personalizada sin complicaciones, y mejorar tu bienestar mental desde cualquier lugar.<br>
+            <strong>¡No esperes más! Agenda tu sesión en línea y comienza a sentirte mejor ahora mismo.</strong></p>
+        </div>
+        <div class="card">
+            <h2>Terapia de Pareja</h2>
+            <p class="price">$1000 x sesión</p>
+            <p>¿Las discusiones o el distanciamiento están afectando tu relación?<br>
+            La terapia de pareja puede ayudarte a mejorar la comunicación, resolver conflictos y recuperar la conexión que tenían. Dale a tu relación el apoyo que necesita para sanar y crecer.<br>
+            <strong>¡Agenda una sesión y transformen juntos su relación!</strong></p>
+        </div>
+        <div class="card">
+            <h2>Terapia Familiar</h2>
+            <p class="price">$1200 x sesión</p>
+            <p>¿Sientes que la comunicación en casa se ha vuelto difícil y las relaciones familiares tensas?<br>
+            La terapia familiar es un espacio donde cada miembro de la familia puede expresar sus sentimientos, resolver conflictos y mejorar la dinámica en el hogar. Con nuestro apoyo, lograrán restaurar la armonía y construir relaciones más fuertes.<br>
+            <strong>¡Agenda una sesión y trabajemos juntos para devolver la paz a tu hogar!</strong></p>
+        </div>
+        <div class="card">
+            <h2>Terapia de Duelo</h2>
+            <p class="price">$700 x sesión</p>
+            <p>¿Estás atravesando una pérdida que te resulta difícil superar?<br>
+            Te ofrecemos un espacio donde puedes procesar tus emociones de manera segura y encontrar herramientas para afrontar el duelo. No tienes que lidiar con el dolor solo. Con el acompañamiento adecuado, puedes encontrar consuelo y paz.<br>
+            <strong>¡Agenda una sesión y comienza tu proceso de sanación emocional hoy mismo!</strong></p>
+        </div>
+        <div class="card">
+            <h2>Taller de Duelo</h2>
+            <p class="price">2 a 3 integrantes $3000 x sesión<br>4 a 6 integrantes $3500 x sesión</p>
+            <p>¿Tu familia está lidiando con la pérdida de un ser querido y les cuesta manejar el dolor?<br>
+            En nuestros talleres, la familia completa puede encontrar apoyo mutuo y aprender a afrontar juntos este difícil proceso. Sanen juntos, fortalezcan sus lazos familiares y avancen unidos en su camino de recuperación.<br>
+            <strong>¡Reserva tu lugar en nuestros talleres de duelo y den juntos ese paso hacia la sanación!</strong></p>
+        </div>
+    </div>
+    <div style="text-align:center; margin-top:40px;">
+        <a href="{{ url_for('contact') }}" class="btn-appointment btn-large">Agendar cita</a>
+    </div>
+{% endblock %}

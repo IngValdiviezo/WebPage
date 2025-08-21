@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Contacto{% endblock %}
+{% block content %}
+    <h2>Contacto</h2>
+    <div class="contact-img-container">
+        <img src="{{ url_for('static', filename='tu_imagen.jpg') }}" alt="Contacto" class="image">
+        <div class="middle">
+            <div class="text">Agenda tu cita aquí</div>
+        </div>
+    </div>
+{% endblock %}
